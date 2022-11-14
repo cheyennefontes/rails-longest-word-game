@@ -12,6 +12,7 @@ class GamesController < ApplicationController
         @result = 'Congratulations!'
       else
         @result = "Sorry, but #{@answer} can't be built out of (#{@grid})"
+        break
       end
     end
   end
